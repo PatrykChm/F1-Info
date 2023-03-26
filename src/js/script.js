@@ -2,7 +2,7 @@ const burgerBtn = document.querySelector('.burger-btn')
 const mobileNav = document.querySelector('.mobile__nav')
 const accordions = document.querySelectorAll('.accordion')
 const accordionsIntro = document.querySelectorAll('.accordion__intro')
-const raceFlag = document.querySelector('.raceflag')
+const raceFlag = document.querySelectorAll('.raceflag')
 
 const showMenu = () => {
 	mobileNav.classList.toggle('mobile-nav-active')
