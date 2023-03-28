@@ -2,19 +2,8 @@ const burgerBtn = document.querySelector('.burger-btn')
 const mobileNav = document.querySelector('.mobile__nav')
 const accordions = document.querySelectorAll('.accordion')
 const accordionsIntro = document.querySelectorAll('.accordion__intro')
-const raceFlag = document.querySelector('.raceflag')
+const raceFlags = document.querySelectorAll('.raceflag')
 
-const chceckFlag = () => {
-	accordions.forEach(accordion => {
-		accordion.addEventListener('click', function () {
-			if (accordion.classList.contains('accordion__active')) {
-				raceFlag.style.display = 'none'
-			} else {
-				raceFlag.style.display = 'block'
-			}
-		})
-	})
-}
 const showMenu = () => {
 	mobileNav.classList.toggle('mobile-nav-active')
 }
@@ -45,6 +34,17 @@ accordions.forEach(accordion => {
 	}
 })
 
+const chceckFlag = () => {
+	accordions.forEach(accordion => {
+		accordion.addEventListener('click', function (e) {
+			if (accordion.classList.contains('accordion__active')) {
+				e.target.children[1].style.display = 'none'
+			} else{
+				e.target.children[1].style.display = 'block'
+			}
+		})
+	})
+}
 
 chceckFlag()
 burgerBtn.addEventListener('click', showMenu)
