@@ -425,12 +425,15 @@ header {
 				position: relative;
 				padding: 20px;
 				cursor: pointer;
+				z-index: 100;
 				overflow: hidden;
 
 				.raceflag {
 					position: absolute;
 					right: 0;
+					overflow: hidden;
 					top: 0;
+					z-index: 1;
 					// -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
 					// mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
 					mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) -93%, transparent 100%);
@@ -443,6 +446,7 @@ header {
 			}
 
 			&__content {
+				z-index: 2;
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: center;
@@ -459,12 +463,14 @@ header {
 			p {
 				margin: 0;
 				line-height: 1;
+				z-index: 1;
 			}
 
 			h4 {
 				color: #fff;
 				font-size: 20px;
 				font-weight: 500;
+				z-index: 1;
 			}
 
 			p {
