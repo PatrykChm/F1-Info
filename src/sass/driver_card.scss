@@ -1,0 +1,155 @@
+@import 'colors';
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #ffffff;
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	height: 100%;
+	width: 100%;
+}
+
+header {
+	display: flex;
+	justify-content: flex-start;
+	padding: 30px 10px;
+	background-color: rgb(119, 119, 119);
+
+	img {
+		height: 100%;
+		cursor: pointer;
+	}
+
+	.desktop__nav {
+		display: none;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+}
+
+.nav__links {
+	list-style: none;
+
+	li {
+		display: inline-block;
+		padding: 0 20px;
+		font-size: 20px;
+
+		a {
+			transition: all 0.3s ease 0s;
+			text-decoration: none;
+			color: #fff;
+
+			&:hover {
+				color: rgb(255, 0, 0);
+			}
+		}
+	}
+}
+
+.mobile__nav {
+	position: fixed;
+	width: 100vw;
+
+	padding: 20px 10px;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	z-index: 999;
+	ul {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0 20px;
+
+		li {
+			font-size: 34px;
+			padding: 10px 0;
+		}
+	}
+	transform: translateX(200%);
+	transition: transform 0.6s ease-out;
+}
+.mobile-nav-active {
+	transform: translateX(0%);
+	background: rgb(148, 0, 0);
+}
+.burger-btn {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	padding: 15px;
+
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.7);
+	border: 1px solid transparent;
+	cursor: pointer;
+	z-index: 1001;
+
+	&:hover .burger-btn__bars::after,
+	&:hover .burger-btn__bars::before {
+		width: 100%;
+	}
+
+	&__box {
+		position: relative;
+		width: 40px;
+		height: 30px;
+	}
+
+	&__bars {
+		height: 3px;
+		background-color: #fff;
+
+		&::after {
+			position: absolute;
+			content: '';
+			right: 0;
+			top: 13px;
+			height: 3px;
+			width: 60%;
+			background-color: #fff;
+			transition: width 0.3s;
+		}
+
+		&::before {
+			position: absolute;
+			content: '';
+			top: 27px;
+			width: 30%;
+			right: 0;
+			height: 3px;
+			background-color: #fff;
+			transition: width 0.3s;
+		}
+	}
+}
+
+.driver {
+	width: 100vw;
+
+	&__card {
+        padding: 10px;
+		&__photo {
+			img {
+				max-width: 500px;
+				width: 100%;
+				
+			}
+		}
+
+		&__info {
+		}
+	}
+}

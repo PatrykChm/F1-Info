@@ -66,7 +66,8 @@ const standingsChange = () => {
 	})
 }
 
-standingsChange()
+
 chceckFlag()
 burgerBtn.addEventListener('click', showMenu)
 window.addEventListener('scroll', hideMenu)
+standingsChange()
