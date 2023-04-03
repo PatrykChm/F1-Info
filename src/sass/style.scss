@@ -198,6 +198,29 @@ header {
 			font-size: 32px;
 		}
 
+		// TABELA KONSTRUKTORÓW
+		.constructors__table {
+			margin-top: 50px;
+
+			// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> KOLORY PASKOW POD BLIDAMI
+			.first-line {
+				background-color: $redbull;
+			}
+			.second-line {
+				background-color: $astonMartin;
+			}
+			.third-line {
+				background-color: $mercedes;
+			}
+
+			.table__rectangle__first {
+				height: 100px;
+				p {
+					left: 20%;
+				}
+			}
+		}
+
 		&__buttons {
 			width: 100%;
 			display: flex;
@@ -609,6 +632,8 @@ header {
 	}
 }
 
+// MEDIA QUERIES
+
 @media (min-width: 768px) {
 	.table__podium {
 		display: flex;
@@ -647,10 +672,10 @@ header {
 			}
 		}
 
-		.table__buttons{
+		.table__buttons {
 			margin-bottom: 60px;
 
-			.button{
+			.button {
 				font-size: 18px;
 				padding: 10px 15px;
 			}
@@ -662,8 +687,30 @@ header {
 			width: 22%;
 		}
 	}
-}
 
+	.constructors__table {
+		.third-driver,
+		.second-driver {
+			height: 100px;
+		}
+		.table__rectangle__first {
+			img {
+				max-width: 200px;
+			}
+			p {
+				right: 50%;
+				font-size: 40px;
+				top: 25px;
+			}
+		}
+	}
+}
+@media (min-width: 1000px) {
+	// WIELKOSC ZDJECIA BOLIDU
+	.constructors__table .table__rectangle__first img {
+		max-width: 250px;
+	}
+}
 @media (min-width: 1200px) {
 	header {
 		justify-content: space-around;
@@ -730,5 +777,10 @@ header {
 				font-size: 24px;
 			}
 		}
+	}
+
+	// WIELKOSC ZDJECIA BOLIDU
+	.constructors__table .table__rectangle__first img {
+		max-width: 290px;
 	}
 }
