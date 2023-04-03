@@ -10,6 +10,12 @@ const showMenu = () => {
 	mobileNav.classList.toggle('mobile-nav-active')
 }
 
+const hideMenu = () => {
+	if (window.pageYOffset != 0) {
+		mobileNav.classList.remove('mobile-nav-active')
+	}
+}
+
 const openAccordion = accordion => {
 	const content = accordion.querySelector('.accordion__content')
 	accordion.classList.add('accordion__active')
@@ -50,17 +56,17 @@ const chceckFlag = () => {
 }
 
 const standingsChange = () => {
-	constructorsButton.addEventListener('click', function(){
+	constructorsButton.addEventListener('click', function () {
 		constructorsStandings.style.display = 'block'
 		driversStandings.style.display = 'none'
-	} )
-	driversButton.addEventListener('click', function(){
+	})
+	driversButton.addEventListener('click', function () {
 		constructorsStandings.style.display = 'none'
 		driversStandings.style.display = 'block'
-	} )
+	})
 }
-
 
 standingsChange()
 chceckFlag()
 burgerBtn.addEventListener('click', showMenu)
+window.addEventListener('scroll', hideMenu)

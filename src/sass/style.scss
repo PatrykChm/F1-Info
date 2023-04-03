@@ -189,6 +189,7 @@ header {
 		height: 100%;
 		width: 100%;
 		padding: 0 40px;
+		padding-bottom: 20px;
 		max-width: 1200px;
 
 		h2 {
@@ -303,6 +304,9 @@ header {
 
 				&:hover {
 					color: red;
+				}
+				&:focus{
+					color: rgb(255, 34, 34);
 				}
 			}
 		}
