@@ -3,7 +3,8 @@ const mobileNav = document.querySelector('.mobile__nav')
 const accordions = document.querySelectorAll('.accordion')
 const driversButton = document.querySelector('.driver__button')
 const constructorsButton = document.querySelector('.constructors__button')
-
+const driversStandings = document.querySelector('.drivers__table')
+const constructorsStandings = document.querySelector('.constructors__table')
 
 const showMenu = () => {
 	mobileNav.classList.toggle('mobile-nav-active')
@@ -36,17 +37,30 @@ accordions.forEach(accordion => {
 })
 
 const chceckFlag = () => {
-    accordions.forEach(accordion => {
-        accordion.addEventListener('click', function () {
-            const raceFlag = accordion.querySelector('.raceflag')
-            if (accordion.classList.contains('accordion__active')) {
-                raceFlag.style.display = 'none'
-            } else {
-                raceFlag.style.display = 'block'
-            }
-        })
-    })
+	accordions.forEach(accordion => {
+		accordion.addEventListener('click', function () {
+			const raceFlag = accordion.querySelector('.raceflag')
+			if (accordion.classList.contains('accordion__active')) {
+				raceFlag.style.display = 'none'
+			} else {
+				raceFlag.style.display = 'block'
+			}
+		})
+	})
 }
 
+const standingsChange = () => {
+	constructorsButton.addEventListener('click', function(){
+		constructorsStandings.style.display = 'block'
+		driversStandings.style.display = 'none'
+	} )
+	driversButton.addEventListener('click', function(){
+		constructorsStandings.style.display = 'none'
+		driversStandings.style.display = 'block'
+	} )
+}
+
+
+standingsChange()
 chceckFlag()
 burgerBtn.addEventListener('click', showMenu)

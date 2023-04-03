@@ -201,6 +201,7 @@ header {
 		// TABELA KONSTRUKTORÓW
 		.constructors__table {
 			margin-top: 50px;
+			display: none;
 
 			// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> KOLORY PASKOW POD BLIDAMI
 			.first-line {
@@ -226,7 +227,7 @@ header {
 						margin-left: 15px;
 						font-size: 14px;
 					}
-
+					// KOLORY KONSTRUKTORÓW -----**************************************************************************
 					&:nth-child(1) {
 						.club_color {
 							background-color: $redbull;
