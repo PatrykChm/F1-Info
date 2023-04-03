@@ -219,6 +219,67 @@ header {
 					left: 20%;
 				}
 			}
+
+			.drivers {
+				.table__driver {
+					.driver_surname {
+						margin-left: 15px;
+						font-size: 14px;
+					}
+
+					&:nth-child(1) {
+						.club_color {
+							background-color: $redbull;
+						}
+					}
+					&:nth-child(2) {
+						.club_color {
+							background-color: $astonMartin;
+						}
+					}
+					&:nth-child(3) {
+						.club_color {
+							background-color: $mercedes;
+						}
+					}
+					&:nth-child(4) {
+						.club_color {
+							background-color: $ferrari;
+						}
+					}
+					&:nth-child(5) {
+						.club_color {
+							background-color: $mcLaren;
+						}
+					}
+					&:nth-child(6) {
+						.club_color {
+							background-color: $alpine;
+						}
+					}
+					&:nth-child(7) {
+						.club_color {
+							background-color: $hass;
+						}
+					}
+					&:nth-child(8) {
+						.club_color {
+							background-color: $alfaRomeo;
+						}
+					}
+					&:nth-child(9) {
+						.club_color {
+							background-color: $alfaTauri;
+						}
+					}
+					&:nth-child(10) {
+						.club_color {
+							background-color: $williams;
+							margin: 0 10px;
+						}
+					}
+				}
+			}
 		}
 
 		&__buttons {
