@@ -1,6 +1,8 @@
 const burgerBtn = document.querySelector('.burger-btn')
 const mobileNav = document.querySelector('.mobile__nav')
 const accordions = document.querySelectorAll('.accordion')
+const driversButton = document.querySelector('.driver__button')
+const constructorsButton = document.querySelector('.constructors__button')
 
 
 const showMenu = () => {
