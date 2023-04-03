@@ -305,7 +305,7 @@ header {
 				&:hover {
 					color: red;
 				}
-				&:focus{
+				&:focus {
 					color: rgb(255, 34, 34);
 				}
 			}
@@ -401,38 +401,38 @@ header {
 		}
 		&__driver:nth-child(4) {
 			.club_color {
-				background-color: $ferrari;
+				background-color: $mercedes;
 			}
 		}
 		&__driver:nth-child(5) {
 			.club_color {
-				background-color: $mercedes;
+				background-color: $ferrari;
 			}
 		}
 		&__driver:nth-child(6) {
 			.club_color {
-				background-color: $mercedes;
+				background-color: $astonMartin;
 			}
 		}
 		&__driver:nth-child(7) {
 			.club_color {
-				background-color: $astonMartin;
+				background-color: $mercedes;
 			}
 		}
 		&__driver:nth-child(8) {
 			.club_color {
-				background-color: $ferrari;
+				background-color: $mcLaren;
 			}
 		}
 		&__driver:nth-child(9) {
 			.club_color {
-				background-color: $alfaRomeo;
+				background-color: $hass;
 			}
 		}
 		&__driver:nth-child(10) {
 			.club_color {
-				background-color: $alpine;
-				margin: 0 15px;
+				background-color: $ferrari;
+				margin: 0 10px;
 			}
 		}
 		.table__above__rectangle {
