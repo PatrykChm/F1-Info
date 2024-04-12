@@ -80,7 +80,7 @@ header {
 }
 .mobile-nav-active {
 	transform: translateX(0%);
-	background: rgb(148, 0, 0);
+	background: rgba(148, 0, 0, 0.822);
 }
 .burger-btn {
 	position: fixed;
@@ -138,6 +138,9 @@ header {
 
 .driver {
 	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
 	&__card {
 		padding: 10px;
@@ -169,21 +172,61 @@ header {
 			}
 		}
 	}
+	button {
+		padding: 20px 10px;
+		border-radius: 10px;
+		margin-bottom: 20px;
+		box-shadow: rgba(0, 0, 0, 0.10) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+		border: none;
+		transition: 0.5s;
+		a {
+			text-decoration: none;
+			color: black;
+			background: none;
+			padding: 20px 10px;
+			font-size: 14px;
+			transition: 0.5s;
+		}
+	}
+	button:hover {
+		background-color: red;
+		a {
+			color: white;
+		}
+	}
+	.line{
+		height: 2px;
+		width: 85%;
+		background-color: black;
+	}
 }
 .stats {
 	width: 100%;
-	padding: 15px;
+	padding: 25px;
 	&__list {
-		display: flex;
+		width: 100%;
 		justify-content: space-around;
 		font-size: 15px;
-		line-height: 150%;
+		line-height: 170%;
 
-		th {
-			text-align: left;
+		tr {
+			display: flex;
+			justify-content: space-between;
 		}
 		td {
-			padding-left: 20px;
+			margin-right: 20px;
+			text-align: left;
 		}
+	}
+}
+.biography {
+	width: 100%;
+	padding: 25px;
+	p {
+		margin-bottom: 15px;
+		line-height: 135%;
+	}
+	h1 {
+		margin-bottom: 20px;
 	}
 }
