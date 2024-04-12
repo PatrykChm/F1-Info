@@ -140,16 +140,50 @@ header {
 	width: 100vw;
 
 	&__card {
-        padding: 10px;
+		padding: 10px;
 		&__photo {
 			img {
 				max-width: 500px;
 				width: 100%;
-				
 			}
 		}
+		&__title {
+			padding: 15px;
+			.driver__card__number {
+				font-size: 20px;
+				margin-bottom: 5px;
+				display: flex;
+				align-items: center;
+				.flag {
+					margin-left: 10px;
+					height: 20%;
+					img {
+						border-radius: 5px;
+						width: 30px;
+						height: 21px;
+					}
+				}
+			}
+			h1 {
+				font-size: 26px;
+			}
+		}
+	}
+}
+.stats {
+	width: 100%;
+	padding: 15px;
+	&__list {
+		display: flex;
+		justify-content: space-around;
+		font-size: 15px;
+		line-height: 150%;
 
-		&__info {
+		th {
+			text-align: left;
+		}
+		td {
+			padding-left: 20px;
 		}
 	}
 }
