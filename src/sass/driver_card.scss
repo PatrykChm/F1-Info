@@ -137,7 +137,7 @@ header {
 }
 
 .driver {
-	width: 100vw;
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -148,6 +148,7 @@ header {
 			img {
 				max-width: 500px;
 				width: 100%;
+				border-radius: 10px;
 			}
 		}
 		&__title {
@@ -176,7 +177,7 @@ header {
 		padding: 20px 10px;
 		border-radius: 10px;
 		margin-bottom: 20px;
-		box-shadow: rgba(0, 0, 0, 0.10) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 		border: none;
 		transition: 0.5s;
 		a {
@@ -194,7 +195,7 @@ header {
 			color: white;
 		}
 	}
-	.line{
+	.line {
 		height: 2px;
 		width: 85%;
 		background-color: black;
@@ -228,5 +229,41 @@ header {
 	}
 	h1 {
 		margin-bottom: 20px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.driver {
+		margin-top: 15px;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		&__card {
+			width: 50%;
+
+			&__title{
+				h1{
+					font-size: 32px;
+				}
+			}
+		}
+		.line {
+			width: 0;
+		}
+		.stats {
+			width: 40%;
+
+			&__list {
+				font-size: 18px;
+				line-height: 300%;
+			}
+		}
+
+		.biography_1280{
+			width: 80%;
+			height: 2px;
+			background-color: black;
+		}
 	}
 }
