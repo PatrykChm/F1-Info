@@ -137,7 +137,6 @@ header {
 }
 
 .driver {
-
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -177,6 +176,7 @@ header {
 		padding: 20px 10px;
 		border-radius: 10px;
 		margin-bottom: 20px;
+		margin-top: 20px;
 		box-shadow: rgba(0, 0, 0, 0.1) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 		border: none;
 		transition: 0.5s;
@@ -190,7 +190,7 @@ header {
 		}
 	}
 	button:hover {
-		background-color: red;
+		background-color: rgba(255, 0, 0, 0.267);
 		a {
 			color: white;
 		}
@@ -199,6 +199,42 @@ header {
 		height: 2px;
 		width: 85%;
 		background-color: black;
+	}
+
+	// KARUZELA ZDJECIA MAXA - STYLE -----------------------------------------------------------
+
+	.carousel {
+		&-inner {
+			width: 100%;
+			padding: 15px;
+			img {
+				max-width: 100%;
+			}
+		}
+		&-item {
+			width: 100%;
+			max-height: 600px;
+		}
+		.carousel-control-next {
+			padding: 0;
+			margin: 0;
+			border-radius: 0;
+			box-shadow: none;
+		}
+		.carousel-control-next:hover {
+			background-color: #ffffff00;
+		}
+
+		.carousel-control-prev {
+			padding: 0;
+			margin: 0;
+			border-radius: 0;
+			box-shadow: none;
+			background-color: #9c404000;
+		}
+		.carousel-control-prev:hover {
+			background-color: #ffffff00;
+		}
 	}
 }
 .stats {
@@ -242,8 +278,8 @@ header {
 		&__card {
 			width: 50%;
 
-			&__title{
-				h1{
+			&__title {
+				h1 {
 					font-size: 32px;
 				}
 			}
@@ -259,11 +295,22 @@ header {
 				line-height: 300%;
 			}
 		}
-
-		.biography_1280{
+		.biography {
+			padding: 45px;
+			h1 {
+				margin-bottom: 25px;
+			}
+		}
+		.biography_1280 {
 			width: 80%;
 			height: 2px;
 			background-color: black;
+		}
+
+		.carousel {
+			&-inner {
+				padding: 45px;
+			}
 		}
 	}
 }

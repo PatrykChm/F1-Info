@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <script src="https://kit.fontawesome.com/368f6e9979.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="dist/css/style.min.css">
@@ -51,7 +50,7 @@
 
 
     <main>
-
+        <!-- Hero grafika -->
         <section class="info">
             <div class="hero-img">
                 <div class="hero-text">
@@ -65,309 +64,312 @@
         <section id="standings" class="standings">
             <div class="table">
                 <h2 class="table__header">TOP 10</h2>
-             <div class="table__buttons">
-                <button class="button driver__button">Kierowcy</button>
-                <button class="button constructors__button">Konstruktorzy</button>
-             </div>
-             <div class="drivers__table">
-                <div class="table__podium">
+                <div class="table__buttons">
+                    <button class="button driver__button">Kierowcy</button>
+                    <button class="button constructors__button">Konstruktorzy</button>
+                </div>
+                <div class="drivers__table">
+                    <!-- Podium 1-2-3 -->
+                    <div class="table__podium">
+                        <!-- KIEROWCA NUMER 2 -->
+                        <div class="table__rectangle second-driver">
+                            <div class="table__rectangle__first second-driver">
+                                <img src="dist/img/perez.avif" alt="">
+                                <div class="line second-line"></div>
+                                <p>2.</p>
+                            </div>
 
-                    <div class="table__rectangle second-driver">
-                        <div class="table__rectangle__first second-driver">
-                            <img src="dist/img/perez.avif" alt="">
-                            <div class="line second-line"></div>
-                            <p>2.</p>
+                        </div>
+                        <!-- KIEROWCA NUMER 1 -->
+                        <div class="table__rectangle first-driver">
+                            <div class="table__rectangle__first first-driver">
+                                <img src="dist/img/max.png" alt="">
+                                <div class="line first-line"></div>
+                                <p>1.</p>
+                            </div>
+
+                        </div>
+                        <!-- KIEROWCA NUMER 3 -->
+                        <div class="table__rectangle third-driver">
+                            <div class="table__rectangle__first third-driver">
+                                <img src="dist/img/Leclerc.avif" alt="">
+                                <div class="line third-line"></div>
+                                <p>3.</p>
+                            </div>
+
                         </div>
 
-                    </div>
-                    <div class="table__rectangle first-driver">
-                        <div class="table__rectangle__first first-driver">
-                            <img src="dist/img/max.png" alt="">
-                            <div class="line first-line"></div>
-                            <p>1.</p>
+                        <div class="table__above__rectangle second-driver">
+                            <p class="name">Sergio
+                                <img src="dist/img/Mexico.webp" alt="">
+                            </p>
+
+                            <p class="surname">PEREZ</p>
                         </div>
 
-                    </div>
-                    <div class="table__rectangle third-driver">
-                        <div class="table__rectangle__first third-driver">
-                            <img src="dist/img/alonso.avif" alt="">
-                            <div class="line third-line"></div>
-                            <p>3.</p>
+                        <div class="table__above__rectangle first-driver">
+                            <p class="name">Max
+                                <img src="dist/img/Netherlands.webp" alt="">
+                            </p>
+
+                            <p class="surname">VERSTAPPEN</p>
                         </div>
 
+                        <div class="table__above__rectangle third-driver">
+                            <p class="name">Charles
+                                <img src="dist/img/monaco_flag.avif" alt="">
+                            </p>
+
+                            <p class="surname">LECLERC</p>
+                        </div>
                     </div>
 
-                    <div class="table__above__rectangle second-driver">
-                        <p class="name">Sergio
-                            <img src="dist/img/Mexico.webp" alt="">
-                        </p>
 
-                        <p class="surname">PEREZ</p>
-                    </div>
+                    <div class="drivers">
+                        <a href="verstappen.html" class="table__driver">
+                            <p class="driver_pos">1</p>
+                            <div class="club_color"></div>
+                            <p class="driver_surname">Max</p>
+                            <p class="driver_name">Verstappen</p>
+                            <div class="points">
+                                <p>69 PTS</p>
+                            </div>
+                        </a>
+                        <a class="table__driver">
+                            <p class="driver_pos">2</p>
+                            <div class="club_color"></div>
+                            <p class="driver_surname">Sergio</p>
+                            <p class="driver_name">Perez</p>
+                            <div class="points">
+                                <p>54 PTS</p>
+                            </div>
+                        </a>
+                        <a class="table__driver">
+                            <p class="driver_pos">3</p>
+                            <div class="club_color"></div>
+                            <p class="driver_surname">Fernando</p>
+                            <p class="driver_name">Alonso</p>
+                            <div class="points">
+                                <p>45 PTS</p>
+                            </div>
+                        </a>
+                        <a class="table__driver">
+                            <p class="driver_pos">4</p>
+                            <div class="club_color"></div>
+                            <p class="driver_surname">Lewis</p>
+                            <p class="driver_name">Hamilton</p>
+                            <div class="points">
+                                <p>38 PTS</p>
+                            </div>
+                        </a>
+                        <a class="table__driver">
+                            <p class="driver_pos">5</p>
+                            <div class="club_color"></div>
+                            <p class="driver_surname">Carlos</p>
+                            <p class="driver_name">Sainz</p>
+                            <div class="points">
+                                <p>20 PTS</p>
+                            </div>
+                        </a>
+                        <a class="table__driver">
+                            <p class="driver_pos">6</p>
+                            <div class="club_color"></div>
+                            <p class="driver_surname">Lance</p>
+                            <p class="driver_name">Stroll</p>
+                            <div class="points">
+                                <p>20 PTS</p>
+                            </div>
+                        </a>
+                        <a class="table__driver">
+                            <p class="driver_pos">7</p>
+                            <div class="club_color"></div>
+                            <p class="driver_surname">George</p>
+                            <p class="driver_name">Russel</p>
+                            <div class="points">
+                                <p>18 PTS</p>
+                            </div>
+                        </a>
+                        <a class="table__driver">
+                            <p class="driver_pos">8</p>
+                            <div class="club_color"></div>
+                            <p class="driver_surname">Lando</p>
+                            <p class="driver_name">Norris</p>
+                            <div class="points">
+                                <p>8 PTS</p>
+                            </div>
+                        </a>
+                        <a class="table__driver">
+                            <p class="driver_pos">9</p>
+                            <div class="club_color"></div>
+                            <p class="driver_surname">Nico</p>
+                            <p class="driver_name">Hulkenberg</p>
+                            <div class="points">
+                                <p>6 PTS</p>
+                            </div>
+                        </a>
+                        <a class="table__driver">
+                            <p class="driver_pos">10</p>
+                            <div class="club_color"></div>
+                            <p class="driver_surname">Charles</p>
+                            <p class="driver_name">Leclerc</p>
+                            <div class="points">
+                                <p>6 PTS</p>
+                            </div>
+                        </a>
 
-                    <div class="table__above__rectangle first-driver">
-                        <p class="name">Max
-                            <img src="dist/img/Netherlands.webp" alt="">
-                        </p>
-
-                        <p class="surname">VERSTAPPEN</p>
-                    </div>
-
-                    <div class="table__above__rectangle third-driver">
-                        <p class="name">Fernando
-                            <img src="dist/img/Spain.avif" alt="">
-                        </p>
-
-                        <p class="surname">ALONSO</p>
                     </div>
                 </div>
 
+                <div class="constructors__table">
+                    <div class="table__podium">
 
-                <div class="drivers">
-                    <a href="verstappen.html" class="table__driver">
-                        <p class="driver_pos">1</p>
-                        <div class="club_color"></div>
-                        <p class="driver_surname">Max</p>
-                        <p class="driver_name">Verstappen</p>
-                        <div class="points">
-                            <p>69 PTS</p>
-                        </div>
-                    </a>
-                    <a class="table__driver">
-                        <p class="driver_pos">2</p>
-                        <div class="club_color"></div>
-                        <p class="driver_surname">Sergio</p>
-                        <p class="driver_name">Perez</p>
-                        <div class="points">
-                            <p>54 PTS</p>
-                        </div>
-                    </a>
-                    <a class="table__driver">
-                        <p class="driver_pos">3</p>
-                        <div class="club_color"></div>
-                        <p class="driver_surname">Fernando</p>
-                        <p class="driver_name">Alonso</p>
-                        <div class="points">
-                            <p>45 PTS</p>
-                        </div>
-                    </a>
-                    <a class="table__driver">
-                        <p class="driver_pos">4</p>
-                        <div class="club_color"></div>
-                        <p class="driver_surname">Lewis</p>
-                        <p class="driver_name">Hamilton</p>
-                        <div class="points">
-                            <p>38 PTS</p>
-                        </div>
-                    </a>
-                    <a class="table__driver">
-                        <p class="driver_pos">5</p>
-                        <div class="club_color"></div>
-                        <p class="driver_surname">Carlos</p>
-                        <p class="driver_name">Sainz</p>
-                        <div class="points">
-                            <p>20 PTS</p>
-                        </div>
-                    </a>
-                    <a class="table__driver">
-                        <p class="driver_pos">6</p>
-                        <div class="club_color"></div>
-                        <p class="driver_surname">Lance</p>
-                        <p class="driver_name">Stroll</p>
-                        <div class="points">
-                            <p>20 PTS</p>
-                        </div>
-                    </a>
-                    <a class="table__driver">
-                        <p class="driver_pos">7</p>
-                        <div class="club_color"></div>
-                        <p class="driver_surname">George</p>
-                        <p class="driver_name">Russel</p>
-                        <div class="points">
-                            <p>18 PTS</p>
-                        </div>
-                    </a>
-                    <a class="table__driver">
-                        <p class="driver_pos">8</p>
-                        <div class="club_color"></div>
-                        <p class="driver_surname">Lando</p>
-                        <p class="driver_name">Norris</p>
-                        <div class="points">
-                            <p>8 PTS</p>
-                        </div>
-                    </a>
-                    <a class="table__driver">
-                        <p class="driver_pos">9</p>
-                        <div class="club_color"></div>
-                        <p class="driver_surname">Nico</p>
-                        <p class="driver_name">Hulkenberg</p>
-                        <div class="points">
-                            <p>6 PTS</p>
-                        </div>
-                    </a>
-                    <a class="table__driver">
-                        <p class="driver_pos">10</p>
-                        <div class="club_color"></div>
-                        <p class="driver_surname">Charles</p>
-                        <p class="driver_name">Leclerc</p>
-                        <div class="points">
-                            <p>6 PTS</p>
-                        </div>
-                    </a>
+                        <div class="table__rectangle second-driver">
+                            <div class="table__rectangle__first second-driver">
+                                <img src="dist/img/aston_car.avif" alt="">
+                                <div class="line second-line"></div>
+                                <p>2.</p>
+                            </div>
 
+                        </div>
+                        <div class="table__rectangle first-driver">
+                            <div class="table__rectangle__first first-driver">
+                                <img src="dist/img/redbull_car.avif" alt="">
+                                <div class="line first-line"></div>
+                                <p>1.</p>
+                            </div>
+
+                        </div>
+                        <div class="table__rectangle third-driver">
+                            <div class="table__rectangle__first third-driver">
+                                <img src="dist/img/mercedes_car.avif" alt="">
+                                <div class="line third-line"></div>
+                                <p>3.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="table__above__rectangle second-driver">
+                            <p class="name">Aston Martin Aramco Cognizant F1 Team
+                                <img src="dist/img/GBFlag.webp" alt="">
+                            </p>
+
+
+                        </div>
+
+                        <div class="table__above__rectangle first-driver">
+                            <p class="name">Oracle Red Bull Racing
+                                <img src="dist/img/Austria.webp" alt="">
+                            </p>
+
+
+                        </div>
+
+                        <div class="table__above__rectangle third-driver">
+                            <p class="name">Mercedes-AMG PETRONAS F1 Team
+                                <img src="dist/img/germany.png" alt="">
+                            </p>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="drivers">
+                        <a class="table__driver">
+                            <p class="driver_pos">1</p>
+                            <div class="club_color"></div>
+                            <p class="driver_name">Redbull Racing</p>
+                            <p class="driver_surname"> Vestappen / Perez</p>
+                            <div class="points">
+                                <p>123 PTS</p>
+                            </div>
+                        </a>
+                        <a class="table__driver">
+                            <p class="driver_pos">2</p>
+                            <div class="club_color"></div>
+                            <p class="driver_name">Aston Martin</p>
+                            <p class="driver_surname">Alonso / Stroll</p>
+                            <div class="points">
+                                <p>65 PTS</p>
+                            </div>
+                        </a>
+                        <a class="table__driver">
+                            <p class="driver_pos">3</p>
+                            <div class="club_color"></div>
+                            <p class="driver_name">Mercedes</p>
+                            <p class="driver_surname">Hammilton / Russell</p>
+                            <div class="points">
+                                <p>56 PTS</p>
+                            </div>
+                        </a>
+                        <a class="table__driver">
+                            <p class="driver_pos">4</p>
+                            <div class="club_color"></div>
+                            <p class="driver_name">Ferrari</p>
+                            <p class="driver_surname">Leclerc / Sainz</p>
+                            <div class="points">
+                                <p>26 PTS</p>
+                            </div>
+                        </a>
+                        <a class="table__driver">
+                            <p class="driver_pos">5</p>
+                            <div class="club_color"></div>
+                            <p class="driver_name">McLaren</p>
+                            <p class="driver_surname">Norris / Piastri</p>
+                            <div class="points">
+                                <p>12 PTS</p>
+                            </div>
+                        </a>
+                        <a class="table__driver">
+                            <p class="driver_pos">6</p>
+                            <div class="club_color"></div>
+                            <p class="driver_name">Alpine</p>
+                            <p class="driver_surname">Gasly / Ocon</p>
+                            <div class="points">
+                                <p>8 PTS</p>
+                            </div>
+                        </a>
+                        <a class="table__driver">
+                            <p class="driver_pos">7</p>
+                            <div class="club_color"></div>
+                            <p class="driver_name">Hass</p>
+                            <p class="driver_surname">Magnussen / Hulkenberg</p>
+                            <div class="points">
+                                <p>7 PTS</p>
+                            </div>
+                        </a>
+                        <a class="table__driver">
+                            <p class="driver_pos">8</p>
+                            <div class="club_color"></div>
+                            <p class="driver_name">Alfa Romeo</p>
+                            <p class="driver_surname">Bottas / Zhou</p>
+                            <div class="points">
+                                <p>6 PTS</p>
+                            </div>
+                        </a>
+                        <a class="table__driver">
+                            <p class="driver_pos">9</p>
+                            <div class="club_color"></div>
+                            <p class="driver_name">AlphaTauri</p>
+                            <p class="driver_surname">Tsunoda / De Vries</p>
+                            <div class="points">
+                                <p>1 PTS</p>
+                            </div>
+                        </a>
+                        <a class="table__driver">
+                            <p class="driver_pos">10</p>
+                            <div class="club_color"></div>
+                            <p class="driver_name">Williams</p>
+                            <p class="driver_surname">Albon / Sergeant</p>
+                            <div class="points">
+                                <p>1 PTS</p>
+                            </div>
+                        </a>
+
+                    </div>
                 </div>
-             </div>
+            </div>
 
-             <div class="constructors__table">
-                <div class="table__podium">
-
-                    <div class="table__rectangle second-driver">
-                        <div class="table__rectangle__first second-driver">
-                            <img src="dist/img/aston_car.avif" alt="">
-                            <div class="line second-line"></div>
-                            <p>2.</p>
-                        </div>
-
-                    </div>
-                    <div class="table__rectangle first-driver">
-                        <div class="table__rectangle__first first-driver">
-                            <img src="dist/img/redbull_car.avif" alt="">
-                            <div class="line first-line"></div>
-                            <p>1.</p>
-                        </div>
-
-                    </div>
-                    <div class="table__rectangle third-driver">
-                        <div class="table__rectangle__first third-driver">
-                            <img src="dist/img/mercedes_car.avif" alt="">
-                            <div class="line third-line"></div>
-                            <p>3.</p>
-                        </div>
-
-                    </div>
-
-                    <div class="table__above__rectangle second-driver">
-                        <p class="name">Aston Martin Aramco Cognizant F1 Team
-                            <img src="dist/img/GBFlag.webp" alt="">
-                        </p>
-
-                        
-                    </div>
-
-                    <div class="table__above__rectangle first-driver">
-                        <p class="name">Oracle Red Bull Racing
-                            <img src="dist/img/Austria.webp" alt="">
-                        </p>
-
-                       
-                    </div>
-
-                    <div class="table__above__rectangle third-driver">
-                        <p class="name">Mercedes-AMG PETRONAS F1 Team
-                            <img src="dist/img/germany.png" alt="">
-                        </p>
-
-                        
-                    </div>
-                </div>
-
-
-                <div class="drivers">
-                    <a class="table__driver">
-                        <p class="driver_pos">1</p>
-                        <div class="club_color"></div>
-                        <p class="driver_name">Redbull Racing</p>
-                        <p class="driver_surname"> Vestappen / Perez</p>
-                        <div class="points">
-                            <p>123 PTS</p>
-                        </div>
-                    </a>
-                    <a class="table__driver">
-                        <p class="driver_pos">2</p>
-                        <div class="club_color"></div>
-                        <p class="driver_name">Aston Martin</p>
-                        <p class="driver_surname">Alonso / Stroll</p>
-                        <div class="points">
-                            <p>65 PTS</p>
-                        </div>
-                    </a>
-                    <a class="table__driver">
-                        <p class="driver_pos">3</p>
-                        <div class="club_color"></div>
-                        <p class="driver_name">Mercedes</p>
-                        <p class="driver_surname">Hammilton / Russell</p>
-                        <div class="points">
-                            <p>56 PTS</p>
-                        </div>
-                    </a>
-                    <a class="table__driver">
-                        <p class="driver_pos">4</p>
-                        <div class="club_color"></div>
-                        <p class="driver_name">Ferrari</p>
-                        <p class="driver_surname">Leclerc / Sainz</p>
-                        <div class="points">
-                            <p>26 PTS</p>
-                        </div>
-                    </a>
-                    <a class="table__driver">
-                        <p class="driver_pos">5</p>
-                        <div class="club_color"></div>
-                        <p class="driver_name">McLaren</p>
-                        <p class="driver_surname">Norris / Piastri</p>
-                        <div class="points">
-                            <p>12 PTS</p>
-                        </div>
-                    </a>
-                    <a class="table__driver">
-                        <p class="driver_pos">6</p>
-                        <div class="club_color"></div>
-                        <p class="driver_name">Alpine</p>
-                        <p class="driver_surname">Gasly / Ocon</p>
-                        <div class="points">
-                            <p>8 PTS</p>
-                        </div>
-                    </a>
-                    <a class="table__driver">
-                        <p class="driver_pos">7</p>
-                        <div class="club_color"></div>
-                        <p class="driver_name">Hass</p>
-                        <p class="driver_surname">Magnussen / Hulkenberg</p>
-                        <div class="points">
-                            <p>7 PTS</p>
-                        </div>
-                    </a>
-                    <a class="table__driver">
-                        <p class="driver_pos">8</p>
-                        <div class="club_color"></div>
-                        <p class="driver_name">Alfa Romeo</p>
-                        <p class="driver_surname">Bottas / Zhou</p>
-                        <div class="points">
-                            <p>6 PTS</p>
-                        </div>
-                    </a>
-                    <a class="table__driver">
-                        <p class="driver_pos">9</p>
-                        <div class="club_color"></div>
-                        <p class="driver_name">AlphaTauri</p>
-                        <p class="driver_surname">Tsunoda / De Vries</p>
-                        <div class="points">
-                            <p>1 PTS</p>
-                        </div>
-                    </a>
-                    <a class="table__driver">
-                        <p class="driver_pos">10</p>
-                        <div class="club_color"></div>
-                        <p class="driver_name">Williams</p>
-                        <p class="driver_surname">Albon / Sergeant</p>
-                        <div class="points">
-                            <p>1 PTS</p>
-                        </div>
-                    </a>
-
-                </div>
-             </div>
-             </div>
-                
             </div>
             </div>
             </div>
@@ -1025,6 +1027,7 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="dist/js/slicksettings.min.js"></script>
     <script src="dist/js/script.min.js"></script>
+    
 </body>
 
 </html>
