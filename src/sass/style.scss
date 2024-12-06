@@ -677,29 +677,7 @@ header {
 	}
 }
 
-.test {
-	padding: 50px;
-	.test_slick {
-		display: flex;
-		flex-direction: row;
 
-		height: 500px;
-		.image {
-			width: 200px;
-			height: 200px;
-			background-color: green;
-		}
-		.one {
-			background-color: red;
-		}
-	}
-	.slick-prev .slick-arrow {
-		margin: 5px;
-	}
-	.slick-dots {
-		display: flex;
-	}
-}
 
 // MEDIA QUERIES
 
